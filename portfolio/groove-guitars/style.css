@@ -1,0 +1,201 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {  
+    .float-image {
+        float: left; 
+        margin: 10px; 
+        max-width: 100%; 
+        height: auto; 
+    }
+font-family: "Montserrat", sans-serif;
+margin: 0;
+}
+nav {
+background: linear-gradient(to right, #FF00FE, #F8AE3B, #488017);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+border-bottom: 2px solid #555;
+padding: 5px;
+width: 100%;
+}
+nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+nav li {
+margin: 8px 10px;
+padding: 0;
+}
+nav a {
+text-decoration: none;
+color: #FFFFFF;
+transition: color 0.3s ease;
+}
+nav a:hover {
+color: #FFD700;
+}
+nav a:active {
+color: #000000;
+}
+nav a:focus {
+outline: 2px solid #FFD700;
+}
+/* Header */
+header {
+text-align: center;
+}
+header h1 {
+margin: 0;
+font-size: 4em;
+}
+/* Main Section */
+main {
+max-width: 1000px;
+margin: 20px auto;
+padding: 10px;
+}
+main h1 {
+text-align: center;
+margin: 0;
+font-size: 4em;
+}
+main h2 {
+text-align: center;
+margin: 20px 0;
+background-color: #488017;
+color: white;
+padding: 10px;
+}
+
+#header-color{
+    color: #488017;
+}
+
+footer {
+background: linear-gradient(to right, #FF00FE, #F8AE3B, #488017);
+box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+border-top: purple 3px solid;
+text-align: center;
+padding: 10px;
+width: 100%;
+}
+h1 {
+font-size: 4em;
+}
+.logo {
+max-width: 275px;
+height: auto;
+display: block;
+margin: 0 auto;
+padding: 20px;
+}
+#home-hero {
+background-image: url(images/guitars.jpg);
+height: 400px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#home-hero h1 {
+text-align: center;
+color: white;
+text-shadow: 2px 2px 2px black;
+margin: 0;
+padding: 10px;
+}
+td, th {
+border: 1px solid black;
+padding: 10px;
+}
+table {
+border-collapse: collapse;
+margin: 0 auto;
+border: 5px solid #000000;
+}
+tr:nth-child(even) {
+background-color: #eeeeee;
+}
+tr:hover {
+background-color: #FFFE05;
+}
+th {
+background-color: #488017;
+color: white;
+padding: 10px;
+border-bottom: 5px solid #000000;
+}
+td {
+border: 1px solid #dddddd;
+padding: 10px;
+}
+label {
+float: left;
+width: 8em;
+padding-right: 1em;
+}
+input, textarea {
+margin-bottom: 1em;
+display: block;
+}
+input[type=submit] {
+display: block;
+background-color: #FF00FE;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.float-right{
+    float: right;
+    max-width: 40%;
+    height: auto;
+    margin-left: 30px;
+}
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+h1 {
+font-size: 2em;
+ }
+}
+@media only screen and (max-width: 768px) {
+h1 {
+font-size: 1.5em;
+ }
+nav ul {
+flex-direction: column;
+ }
+nav li {
+margin: 5px 0;
+ }
+footer {
+font-size: 0.8em;
+ }
+}
+
+
+.flaviocopes{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+}
+
+.flaviocopes::after { 
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+
+}
+
+.flaviocopes iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+

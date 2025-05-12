@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="This is an example of a meta description. This will often show up in search results so it is important to write a high quality description for each page of a website">
+  <title>WEBSITE NAME : PAGE NAME</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="highlight-header"> GHANA PHOTOGRAPHY</h1>
+        
+    </header>
+
+    <main class="container-fluid">
+        <!-- Hero Image Row -->
+        <div class="row mb-4">
+            <div class="col-sm-12 text-center">
+                <img class="header-image img-fluid" src="images/gh flag.png" alt="Scenic view of Ghana landscape" height="400" width="1200" />
+            </div>
+        </div>
+    
+        <!-- Text and Icon Row -->
+        <div class="row mb-4 align-items-center">
+            <div class="col-sm-2 text-center" style="font-size: 4rem;">
+                
+            </div>
+            <div class="col-sm-8 ghana-description">
+                <p>
+                    The website features photographs of Ghana from Pixabay.com. Ghana is a country located in West Africa, known for its rich history and cultural heritage. It was the first sub-Saharan African country to gain independence from colonial rule in 1957. The capital city is Accra, and the official language is English. Ghana is famous for its gold, cocoa, and vibrant music and dance traditions. It has a stable democracy and is considered one of Africa’s more peaceful nations.
+                </p>
+            </div>
+        </div>
+    
+        <!-- Photo Gallery Row -->
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <!-- Main image display -->
+                <img id="expandedImg" src="images/mesuem.jpg" alt="Expanded Photo" class="img-fluid mb-3 main-image" />
+                <!-- Thumbnails -->
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <img src="images/President mesuem.jpg" alt="Photo 1" class="img-thumbnail gallery-thumb frame-highlight active" style="max-width: 150px;" onclick="switchImage(this)" />
+                    <img src="images/gh currency.jpg" alt="Photo 2" class="img-thumbnail gallery-thumb frame-highlight" style="max-width: 150px;" onclick="switchImage(this)" />
+                    <img src="images/child.jpg" alt="Photo 3" class="img-thumbnail gallery-thumb frame-highlight" style="max-width: 150px;" onclick="switchImage(this)" />
+                    <img src="images/kid.jpg" alt="Photo 4" class="img-thumbnail gallery-thumb frame-highlight" style="max-width: 150px;" onclick="switchImage(this)" />
+                    <img src="images/marketwoman.jpg" alt="Photo 5" class="img-thumbnail gallery-thumb frame-highlight" style="max-width: 150px;" onclick="switchImage(this)" />
+                    <img src="images/cocoa.jpg" alt="Photo 6" class="img-thumbnail gallery-thumb frame-highlight" style="max-width: 150px;" onclick="switchImage(this)" />
+                    <img src="images/market.jpg" alt="Photo 7" class="img-thumbnail gallery-thumb frame-highlight" style="max-width: 150px;" onclick="switchImage(this)" />
+                    <img src="images/gh gals.jpg" alt="Photo 8" class="img-thumbnail gallery-thumb frame-highlight" style="max-width: 150px;" onclick="switchImage(this)" />
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="container mt-5 pt-4 border-top">
+        <div class="row">
+            <div class="col-sm-4">
+                <p>
+                <h2 class="highlight-exercise">Web Design exercise</h2>
+                    Animal Photography is a website exercise on image galleries available on WebDevStudents.com. The images are royalty-free photos from pixabay.com. JavaScript was used to make the photo gallery, and Bootstrap columns for responsive layout.
+                </p>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center align-items-center gap-4">
+                <i class="fa fa-camera fa-2x" aria-hidden="true" title="Camera Icon"></i>
+                <i class="fa fa-image fa-2x" aria-hidden="true" title="Image Icon"></i>
+                <i class="fa fa-code fa-2x" aria-hidden="true" title="Code Icon"></i>
+                <i class="fa fa-bootstrap fa-2x" aria-hidden="true" title="Bootstrap Icon"></i>
+            </div>
+    <div class="col-sm-4">
+                <h5 class="highlight-exercise">Connect with Ghana Photography</h5>
+                <p class="text-center mt-3">2025 all rights reserved</p>
+                <p class="text-center mt-2">
+                    <a class="highlight-exercise" href="mailto:ex0362ne@go.minnstate.edu">Email us</a> &bull;
+                    <a class="highlight-exercise" href="tel:6510000000">Call Us</a> &bull;
+                    <a class="highlight-exercise" href="sms:6510000000">Text Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchImage(element) {
+            var expandedImg = document.getElementById("expandedImg");
+            expandedImg.src = element.src;
+            // Remove active class from all thumbnails
+            var thumbnails = document.getElementsByClassName("gallery-thumb");
+            for (var i = 0; i < thumbnails.length; i++) {
+                thumbnails[i].classList.remove("active");
+            }
+            // Add active class to clicked thumbnail
+            element.classList.add("active");
+        }
+    </script>
+</body>
+</html>
