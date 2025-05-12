@@ -1,223 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-body {
-   font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    border-top: 5px solid #4CAF50;
-    border-bottom: 5px solid #4CAF50;
-    background-color: white;
-    color: #333;
-}
-
-h1,h2{
-    font-family: "Boldonse", system-ui;
-    color: #222;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
-
-header {
-    background-color: white;
-    color: #f0f0f0;
-    padding: 15px 0;
-    text-align: center;
-    
-}
-
-nav .nav-link {
-    color: #f0f0f0 !important;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav .nav-link:hover {
-    color: #4CAF50 !important;
-}
-
-.home-hero {
-    background-image: url(image/leaves-6975462_1280.png);
-    background-size: cover;
-    background-position: center;
-    padding: 80px 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    margin-bottom: 30px;
-}
-
-.home-hero h1 {
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    font-size: 72px;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
-    text-align: center;
-    margin: 0;
-}
-
-main {
-    max-width: 900px;
-    margin: 0 auto 40px auto;
-    padding: 30px;
-    background: rgba(255,255,255,0.9);
-    border-radius: 12px;
-    
-}
-
-.home-photo {
-    width: 100%;
-    float: right;
-    height: auto;
-    margin: 0 0 20px 20px;
-    border-radius: 8px;
-    
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-    
-}
-
-.footer-icons i {
-    font-size: 28px;
-    margin: 0 15px;
-    transition: color 0.3s ease;
-}
-
-.footer-icons i:hover {
-    color: #4CAF50;
-}
-
-.footer-bottom {
-    background-color: #111;
-    padding: 15px 0;
-    color: #bbb;
-    font-size: 14px;
-}
-
-/* Logo styling */
-.logo {
-    max-width: 250px;
-    margin: 0 auto 15px auto;
-    display: block;
-    border-radius: 12px;
-   
-}
-
-/* JavaScript Game changes for mobile */
-.mobile{
-    display:none;
-}
-@media only screen and (max-width: 768px){
-    .desktop{
-    display:none;
-}
-    .mobile{
-        display: block;
-        touch-action: manipulation;
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+body {  
+    .float-image {
+        float: left; 
+        margin: 10px; 
+        max-width: 100%; 
+        height: auto; 
     }
+font-family: "Montserrat", sans-serif;
+margin: 0;
 }
-       
-
-
-/* Buttons for game page */
-.btn-primary {
-    background-color: #4CAF50;
-    border: none;
+nav {
+background: linear-gradient(to right, #FF00FE, #F8AE3B, #488017);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+border-bottom: 2px solid #555;
+padding: 5px;
+width: 100%;
 }
-
-.btn-primary:hover {
-    background-color: #45a049;
+nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+list-style-type: none;
+margin: 0;
+padding: 0;
 }
-
-.btn-secondary {
-    background-color: #555;
-    border: none;
+nav li {
+margin: 8px 10px;
+padding: 0;
 }
-
-.btn-secondary:hover {
-    background-color: #444;
+nav a {
+text-decoration: none;
+color: #FFFFFF;
+transition: color 0.3s ease;
 }
-
-/* Game container styling */
-#game {
-    background-size: cover;
-    background-position: center;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+nav a:hover {
+color: #FFD700;
 }
-
-/* Game control buttons */
-.game-controls .myButton {
-    background-color: #00796b; /* teal */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-right: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+nav a:active {
+color: #000000;
 }
-
-.game-controls .myButton:hover {
-    background-color: #004d40;
+nav a:focus {
+outline: 2px solid #FFD700;
 }
-
-/* Intro text styling for readability */
-.intro-text {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    color: #444;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 10px 0 20px 0;
+/* Header */
+header {
+text-align: center;
 }
-
-
-main.container-fluid {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    max-width: 900px;
-    margin: 20px auto 40px auto;
+header h1 {
+margin: 0;
+font-size: 4em;
+}
+/* Main Section */
+main {
+max-width: 1000px;
+margin: 20px auto;
+padding: 10px;
+}
+main h1 {
+text-align: center;
+margin: 0;
+font-size: 4em;
+}
+main h2 {
+text-align: center;
+margin: 20px 0;
+background-color: #488017;
+color: white;
+padding: 10px;
 }
 
-main.container-fluid h2 {
-    color: #2c3e50;
-    border-bottom: 3px solid #4CAF50;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    font-weight: 700;
+#header-color{
+    color: #488017;
 }
 
-main.container-fluid h3 {
-    color: #4CAF50;
-    background-color: #e8f5e9;
-    padding: 8px 15px;
-    border-radius: 6px;
-    margin-top: 30px;
-    box-shadow: 0 2px 5px rgba(76,175,80,0.3);
-}
-
-main.container-fluid p, main.container-fluid ul {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-main.container-fluid ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-main.container-fluid ul li {
-    margin-bottom: 8px;
-}
-
-/* Footer customization */
 footer {
+background: linear-gradient(to right, #FF00FE, #F8AE3B, #488017);
+box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+border-top: purple 3px solid;
+text-align: center;
+padding: 10px;
+width: 100%;
+}
+h1 {
+font-size: 4em;
+}
+.logo {
+max-width: 275px;
+height: auto;
+display: block;
+margin: 0 auto;
+padding: 20px;
+}
+#home-hero {
+background-image: url(images/guitars.jpg);
+height: 400px;
+background-size: cover;
+background-repeat: no-repeat;
+}
+#home-hero h1 {
+text-align: center;
+color: white;
+text-shadow: 2px 2px 2px black;
+margin: 0;
+padding: 10px;
+}
+td, th {
+border: 1px solid black;
+padding: 10px;
+}
+table {
+border-collapse: collapse;
+margin: 0 auto;
+border: 5px solid #000000;
+}
+tr:nth-child(even) {
+background-color: #eeeeee;
+}
+tr:hover {
+background-color: #FFFE05;
+}
+th {
+background-color: #488017;
+color: white;
+padding: 10px;
+border-bottom: 5px solid #000000;
+}
+td {
+border: 1px solid #dddddd;
+padding: 10px;
+}
+label {
+float: left;
+width: 8em;
+padding-right: 1em;
+}
+input, textarea {
+margin-bottom: 1em;
+display: block;
+}
+input[type=submit] {
+display: block;
+background-color: #FF00FE;
+color: white;
+border: none;
+padding: 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.float-right{
+    float: right;
+    max-width: 40%;
+    height: auto;
+    margin-left: 30px;
+}
+/* Responsive Design */
+@media only screen and (max-width: 1024px) {
+h1 {
+font-size: 2em;
+ }
+}
+@media only screen and (max-width: 768px) {
+h1 {
+font-size: 1.5em;
+ }
+nav ul {
+flex-direction: column;
+ }
+nav li {
+margin: 5px 0;
+ }
+footer {
+font-size: 0.8em;
+ }
+}
+
+
+.flaviocopes{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+}
+
+.flaviocopes::after { 
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+
+}
+
+.flaviocopes iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
